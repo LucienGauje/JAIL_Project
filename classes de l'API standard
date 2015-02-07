@@ -1,0 +1,35 @@
+        Classes de l’API standard
+
+
+  1. BufferedImage
+But :  Manipulation des images
+Bibliotheque : java.awt.image.BufferedImage 
+Parametres : BufferedImage(largeur, int hauteur, int Imagetype)→Construit un BufferedImage
+
+Sources : 
+* http://translate.google.fr/translate?hl=fr&sl=en&u=http://download.java.net/jdk6/archive/b104/docs/api/java/awt/image/class-use/BufferedImage.html&prev=search
+* http://translate.google.fr/translate?hl=fr&sl=en&u=http://docs.oracle.com/javase/7/docs/api/java/awt/image/BufferedImage.html&prev=search
+
+  2. ImageIO
+But : Manipulation des images
+Bibliotheque : javax.imageio
+Parametres : imread () -> lire une image de l'URI spécifié 
+Sources : 
+* http://translate.google.fr/translate?hl=fr&sl=en&u=http://imageio.readthedocs.org/en/latest/userapi.html&prev=search
+* http://translate.google.fr/translate?hl=fr&sl=en&u=https://www.cs.duke.edu/csed/java/jdk1.6/api/&prev=search
+
+  3. Robot
+But : Manipulation de la souris et  accès à l’écran
+Bibliotheque : robot.api
+Constructeurs : 
+mouseMove (int x, int y) 
+Déplace le pointeur de la souris en coordonnées écran donnée. 
+mousePress (int buttons) 
+Presses un ou plusieurs boutons de la souris. 
+waitForIdle () 
+Attend jusqu'à ce que tous les événements actuellement sur la file d'attente d'événements ont été traités.
+
+Sources : 
+* http://translate.google.fr/translate?hl=fr&sl=en&u=http://docs.oracle.com/javase/7/docs/api/java/awt/Robot.html&prev=search
+* http://translate.google.fr/translate?hl=fr&sl=en&u=http://robot-framework.readthedocs.org/en/latest/autodoc/robot.api.html&prev=search
+
