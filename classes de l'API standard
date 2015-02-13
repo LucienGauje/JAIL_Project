@@ -8,6 +8,8 @@ Parametres : BufferedImage(largeur, int hauteur, int Imagetype) → Construit u
 Methodes : 
 >LookupOp. filter ( BufferedImage src, BufferedImage dst) 
  Effectue une opération de recherche sur un BufferedImage 
+>BufferedImage. getSubimage (int x, int y, int w, int h) 
+ Retourne une sous-image définie par une zone rectangulaire spécifiée.
 
 Sources : 
 * http://translate.google.fr/translate?hl=fr&sl=en&u=http://download.java.net/jdk6/archive/b104/docs/api/java/awt/image/class-use/BufferedImage.html&prev=search
