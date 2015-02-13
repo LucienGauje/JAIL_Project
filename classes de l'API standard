@@ -5,6 +5,9 @@
 But :  Manipulation des images
 Bibliotheque : java.awt.image.BufferedImage 
 Parametres : BufferedImage(largeur, int hauteur, int Imagetype) → Construit un BufferedImage
+Methodes : 
+>LookupOp. filter ( BufferedImage src, BufferedImage dst) 
+ Effectue une opération de recherche sur un BufferedImage 
 
 Sources : 
 * http://translate.google.fr/translate?hl=fr&sl=en&u=http://download.java.net/jdk6/archive/b104/docs/api/java/awt/image/class-use/BufferedImage.html&prev=search
@@ -21,7 +24,7 @@ Sources :
   3. Robot
 But : Manipulation de la souris et  accès à l’écran
 Bibliotheque : robot.api
-Constructeurs : 
+Methodes : 
 >mouseMove (int x, int y) 
 Déplace le pointeur de la souris en coordonnées écran donnée. 
 >mousePress (int buttons) 
