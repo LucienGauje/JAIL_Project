@@ -13,7 +13,6 @@ Methodes :
 Returns an integer pixel in the default RGB color model (TYPE_INT_ARGB) and default sRGB colorspace.
 
 Sources : 
-* http://translate.google.fr/translate?hl=fr&sl=en&u=http://docs.oracle.com/javase/7/docs/api/javax/imageio/ImageIO.html&prev=search
 * http://translate.google.fr/translate?hl=fr&sl=en&u=http://download.java.net/jdk6/archive/b104/docs/api/java/awt/image/class-use/BufferedImage.html&prev=search
 * http://translate.google.fr/translate?hl=fr&sl=en&u=http://docs.oracle.com/javase/7/docs/api/java/awt/image/BufferedImage.html&prev=search
 
