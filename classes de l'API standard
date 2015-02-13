@@ -1,5 +1,7 @@
         Classes de l’API standard
 
+http://java.developpez.com/faq/gui/?page=graphique_general_images
+
   1. BufferedImage
 But :  Manipulation des images
 Bibliotheque : java.awt.image.BufferedImage 
