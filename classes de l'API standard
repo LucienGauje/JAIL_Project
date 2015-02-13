@@ -22,6 +22,7 @@ But : Manipulation des images
 Bibliotheque : javax.imageio
 Parametres : imread () -> lire une image de l'URI spécifié 
 Sources : 
+* http://translate.google.fr/translate?hl=fr&sl=en&u=http://docs.oracle.com/javase/7/docs/api/javax/imageio/ImageIO.html&prev=search
 * http://translate.google.fr/translate?hl=fr&sl=en&u=http://imageio.readthedocs.org/en/latest/userapi.html&prev=search
 * http://translate.google.fr/translate?hl=fr&sl=en&u=https://www.cs.duke.edu/csed/java/jdk1.6/api/&prev=search
 
