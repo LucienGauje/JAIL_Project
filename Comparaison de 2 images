@@ -1,5 +1,10 @@
 classe qui compare 2 images :
 
+soustraction du rouge vert et bleu de chaque pixel des deux image dans un tableau
+ensuite pour chaque resultat rgb soustraction et srqt(r^2+v^2+b^2) 
+ -> une matrice de meme dimension que les images
++ moyenne de ces valeur -> chiffre entre 0 et 441 (sqrt((255^2)*3)) qui dira la difference
+
 public static double compareImage(BufferedImage img1, BufferedImage img2){
   if(img1.getWidth() != img2.getWidth() || img1.getHeight() != img2.getHeight()){ //si ils ont pas la même taille 
    if(img1.getWidth()*img1.getHeight() < img2.getWidth()*img2.getHeight()){ //img1 plus petit que img2 
