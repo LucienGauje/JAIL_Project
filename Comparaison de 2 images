@@ -14,10 +14,10 @@ public static double compareImage(BufferedImage img1, BufferedImage img2){
     pixel1 = new Color(img1.getRGB(x, y)); //pixel1 la couleur de img1 en x, y
     pixel2 = new Color(img2.getRGB(x, y)); //pixel2 la couleur de img2 en x, y
      if (pixel1.getRed() != pixel2.getRed() || pixel1.getGreen() != pixel2.getGreen() || pixel1.getBlue() != pixel2.getBlue()){
-	      return false;
-	   }
-	 }
- }
+	return false;
+	}
+     }
+   }
 return true;
 } 
   
