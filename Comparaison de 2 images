@@ -13,11 +13,15 @@ public static double compareImage(BufferedImage img1, BufferedImage img2){
    for(int y = 0; y < img1.getHeight(); y++){ 
     pixel1 = new Color(img1.getRGB(x, y)); //pixel1 la couleur de img1 en x, y
     pixel2 = new Color(img2.getRGB(x, y)); //pixel2 la couleur de img2 en x, y
+    int erreurs = 0;	//si decalage de pixel par rapport a l image de reference
      if (pixel1.getRed() != pixel2.getRed() || pixel1.getGreen() != pixel2.getGreen() || pixel1.getBlue() != pixel2.getBlue()){
-	return false;
+	//rajouter une erreur à erreurs
 	}
      }
    }
+if (erreurs==?) {
+  return false 
+}
 return true;
 } 
   
