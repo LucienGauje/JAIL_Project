@@ -7,7 +7,6 @@ public static double compareImage(BufferedImage img1, BufferedImage img2){
   else { //img2 plus petit que img1 
     img1 = resize(img1, img2.getWidth(), img2.getHeight()); } 
   } 
-  double sum = 0; 
   Color pixel1, pixel2; 
   int r,g,b; 
   for(int x = 0; x < img1.getWidth(); x++){ 
