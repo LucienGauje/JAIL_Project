@@ -21,7 +21,7 @@ public static double compareImage(BufferedImage img1, BufferedImage img2){
     pixel2 = new Color(img2.getRGB(x, y)); //pixel2 la couleur de img2 en x, y
     r = pixel1.getRed() - pixel2.getRed(); //
     g = pixel1.getGreen() - pixel2.getGreen(); 
-    b = pixel1.get() - pixel2.getRed(); 
+    b = pixel1.getBlue() - pixel2.getBlue(); 
     sum += Math.sqrt(r*r+g*g+b*b); } 
   } 
   return sum/(img1.getHeight()*img1.getWidth()); } 
