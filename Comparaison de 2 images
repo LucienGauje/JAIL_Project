@@ -1,0 +1,30 @@
+classe qui compare 2 images :
+
+public static double compareImage(BufferedImage img1, BufferedImage img2){
+  if(img1.getWidth() != img2.getWidth() || img1.getHeight() != img2.getHeight()){ //si ils ont pas la même taille 
+   if(img1.getWidth()*img1.getHeight() < img2.getWidth()*img2.getHeight()){ //img1 plus petit que img2 
+    img2 = resize(img2, img1.getWidth(), img1.getHeight()); } 
+  else { //img2 plus petit que img1 
+    img1 = resize(img1, img2.getWidth(), img2.getHeight()); } 
+  } 
+  double sum = 0; 
+  Color pixel1, pixel2; 
+  int r,g,b; 
+  for(int x = 0; x < img1.getWidth(); x++){ 
+   for(int y = 0; y < img1.getHeight(); y++){ 
+    pixel1 = new Color(img1.getRGB(x, y)); 
+    pixel2 = new Color(img2.getRGB(x, y)); 
+    r = pixel1.getRed() - pixel2.getRed(); 
+    g = pixel1.getRed() - pixel2.getRed(); 
+    b = pixel1.getRed() - pixel2.getRed(); 
+    sum += Math.sqrt(r*r+g*g+b*b); } 
+  } 
+  return sum/(img1.getHeight()*img1.getWidth()); } 
+  
+private static BufferedImage resize(Image in, int width, int height){ 
+  BufferedImage out = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB); 
+  Graphics g = out.createGraphics(); 
+  g.drawImage(in, 0, 0, width, height, null); 
+  g.dispose(); 
+  return out; 
+}
