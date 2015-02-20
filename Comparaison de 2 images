@@ -17,11 +17,11 @@ public static double compareImage(BufferedImage img1, BufferedImage img2){
   int r,g,b; 
   for(int x = 0; x < img1.getWidth(); x++){ 
    for(int y = 0; y < img1.getHeight(); y++){ 
-    pixel1 = new Color(img1.getRGB(x, y)); 
-    pixel2 = new Color(img2.getRGB(x, y)); 
-    r = pixel1.getRed() - pixel2.getRed(); 
-    g = pixel1.getRed() - pixel2.getRed(); 
-    b = pixel1.getRed() - pixel2.getRed(); 
+    pixel1 = new Color(img1.getRGB(x, y)); //pixel1 la couleur de img1 en x, y
+    pixel2 = new Color(img2.getRGB(x, y)); //pixel2 la couleur de img2 en x, y
+    r = pixel1.getRed() - pixel2.getRed(); //
+    g = pixel1.getGreen() - pixel2.getGreen(); 
+    b = pixel1.get() - pixel2.getRed(); 
     sum += Math.sqrt(r*r+g*g+b*b); } 
   } 
   return sum/(img1.getHeight()*img1.getWidth()); } 
