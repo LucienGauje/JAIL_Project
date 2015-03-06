@@ -32,5 +32,6 @@ public class Parallele {
 }
 
 
-sources:  http://www.enseignement.polytechnique.fr/profs/informatique/Eric.Goubault/Cours05html/poly003.html
+sources:  http://openclassrooms.com/forum/sujet/connaitre-la-taille-de-l-ecran-en-java-35336
+          http://www.enseignement.polytechnique.fr/profs/informatique/Eric.Goubault/Cours05html/poly003.html
           http://lacl.u-pec.fr/cegielski/Java/ch7.pdf
