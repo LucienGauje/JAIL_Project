@@ -18,15 +18,25 @@ class ImpressionEcran extends Thread {
     BufferedImage bufferedImage = robot.createScreenCapture ( area ) ;
     //ajouter la bufferedimage obtenue qqpart
     )
-  yield();
+  }
+}
+
+class autreproc extends Thread {
+  public void run() {
+  (code: 
+   
+    )
+  //yield();
+  sleep(3);
   }
 }
 
 public class Parallele {
   public static void main(String args[]) {
     AfficheThread t1, t2;
+    t2 = new (autre proc);
     t1 = new ImpressionEcran();
-    t2 = new (autre proc)
+    
     t1.start();
     t2.start();
   }
