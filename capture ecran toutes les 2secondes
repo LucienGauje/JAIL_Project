@@ -1,1 +1,15 @@
 utilisation de la methode createScreenCapture (Rectangle ScreenRect) de la classe Robot
+et peut etre l'interface Runnable avec methode "public void run();"  (pour tte les 2sec)
+
+import java.awt.Rectangle;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.image.BufferedImage;
+
+
+Rectangle area = new Rectangle ( x, y, width, height ) ;
+BufferedImage bufferedImage = robot.createScreenCapture ( area ) ;
+
+
+
+sources: http://www.enseignement.polytechnique.fr/profs/informatique/Eric.Goubault/Cours05html/poly003.html
