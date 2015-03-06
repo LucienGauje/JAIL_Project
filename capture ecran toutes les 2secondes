@@ -1,6 +1,10 @@
 utilisation de la methode createScreenCapture (Rectangle ScreenRect) de la classe Robot
 et peut etre l'interface Runnable avec methode "public void run();"  (pour tte les 2sec)
 
+  =>> creer 2processus : un qui fait une impression ecran et un qui fait tout le reste
+      (utilisation de la methode void yield() ćeder sa place en anglais: 
+      interrompt lex́ecution du processus durant un court instant, instant dont peuvent profiter les autres proc)
+
 import java.awt.Rectangle;
 import java.awt.Robot;
 import java.awt.Toolkit;
@@ -12,4 +16,5 @@ BufferedImage bufferedImage = robot.createScreenCapture ( area ) ;
 
 
 
-sources: http://www.enseignement.polytechnique.fr/profs/informatique/Eric.Goubault/Cours05html/poly003.html
+sources:  http://www.enseignement.polytechnique.fr/profs/informatique/Eric.Goubault/Cours05html/poly003.html
+          http://lacl.u-pec.fr/cegielski/Java/ch7.pdf
