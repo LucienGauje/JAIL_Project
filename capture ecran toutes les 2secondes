@@ -12,10 +12,11 @@ import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
 
 class ImpressionEcran extends Thread {
-  public BufferedImage run() {
+  public void run() {
     (code: 
     Rectangle area = new Rectangle (Toolkit.getScreenSize () ) ;  //taille réelle en pixels de l écran 
     BufferedImage bufferedImage = robot.createScreenCapture ( area ) ;
+    //ajouter la bufferedimage obtenue qqpart
     )
   yield();
   }
