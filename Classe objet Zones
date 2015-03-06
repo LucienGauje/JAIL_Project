@@ -1,0 +1,30 @@
+//import java.awt.image.BufferedImage;
+
+/*Cette classe permet de créer des objets Zones qui correspondent à des zones
+ * de l'image à découper. Elle comporte une méthode getSub qui renvoie la subimage
+ * correspondant aux coordonnées voulues.*/
+
+public class Zones {
+	BufferedImage image = new BufferedImage(1280,1024, BufferedImage.TYPE_INT_RGB);
+	
+	int x;
+	int y;
+	int w;
+	int h;
+	
+	
+	public Zones(BufferedImage image, int x, int y, int w, int h)
+	{
+		this.image=image;
+		this.x=x;
+		this.y=y;
+		this.w=w;
+		this.h=h;
+		
+	}
+	
+	public BufferedImage getSub()
+	{
+		return image.getSubimage(x, y, w, h);
+	}
+}
