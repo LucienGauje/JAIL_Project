@@ -33,6 +33,8 @@ class CreerPlat{                           class CommanderIngredient{           
                                                       }
                                                         |
                                                         |
-                                                      class Compare(image i){
+                                                      class Plats(){
                                                         tab/liste d'images de reference
+                                                      public bool Compare(image i);//compare i avec les images de references
+                                                      public tab de String PlatsDemandes(tte les zones des bulles); //compare tte les bulles avec les images de reference (appel a compare)
                                                       }
