@@ -1,0 +1,23 @@
+                  Heritage des classes
+                  
+      (Abstrat) class Cliquer{
+        =! zones cliquables
+        public abstract cliquer(zonecliquable);
+        }
+                |
+                |
+                |
+    -----------------------------------------------------------------------------------------------------------------------
+    |                                                     |                                     |                         |
+    |                                                     |                                     |                         |
+class CreerPlat{                                CommanderIngredient{
+  public CreerPlat(){};                           public CommanderIngredient(){};
+  public void creerPlat(String p){                public void cliquerCommande(zonecliquable q);
+  si p = onigri                                   public void verifIngredient(tab de string);
+    zone1.cliqueAliment(p);                         //verifie pour chaque ingredient (string)
+    zone3. etc                                     si assez, sinon appel à cliquerCommande
+  si p = california                               }
+    etc
+  }
+  void cliqueAliment(int n);//n fois le mm aliment
+}
