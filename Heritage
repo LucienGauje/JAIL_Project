@@ -35,6 +35,17 @@ class CreerPlat{                           class CommanderIngredient{           
                                                         |
                                                       class Plats(){
                                                         tab/liste d'images de reference
+                                                      public Plats(){};
                                                       public bool Compare(image i);//compare i avec les images de references
                                                       public tab de String PlatsDemandes(tte les zones des bulles); //compare tte les bulles avec les images de reference (appel a compare)
+                                                      }
+                                                        |
+                                                        |
+                                                      class LienEcranAction{
+                                                        
+                                                        public void LPlats(tab de PlatsDemandes); //pour chaque plat p on utilise la methode CreerPlat(p)
+                                                        public void LAssiette(tab des zonesAssiettes);         //appel à cliqueAssiette(a) pour une zonecliquable a
+                                                        public void LDebut();            //appel à Debut()
+                                                        public void LNiveauSuivant()     //appel à NiveauSuivant()
+                                                        public void LCommander();        //appel à verifIngredient(tab de string)
                                                       }
