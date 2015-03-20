@@ -1,0 +1,130 @@
+package Test;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.InputEvent;
+
+//Pense bête : passer les coordonnées des aliments dans la signatures pour l'optimisation
+public class ClassClique {
+
+	private Robot robot = new Robot();
+	private int nbRiz=10; //peut ête a modifier plus tard
+	private int nbAlgue=10;
+	private int nbOeuf=10;
+	private int nbCrevette=10;
+	private int nbSaumon=10;
+	private int nbViande=10;
+	
+	public ClassClique() throws AWTException{
+	}
+	
+	private void leftClick()
+	{
+		robot.delay(1000);
+	    robot.mousePress(InputEvent.BUTTON1_MASK);
+	    robot.delay(1000);
+	    robot.mouseRelease(InputEvent.BUTTON1_MASK);
+	    robot.delay(1000);
+	}
+	//-----------------------------------------------------------//
+	private void cliqueRiz(int n){
+		robot.mouseMove(185, 685);
+		for(int i = 0; i <= n; i++){
+			leftClick();
+			nbRiz--;
+		 }
+	}
+	private void cliqueAlgue(int n){
+		robot.mouseMove(80, 815);
+		for(int i = 0; i <= n; i++){
+			leftClick();
+			nbAlgue--;
+		 }
+	}
+	private void cliqueOeuf(int n){
+		robot.mouseMove(185, 795);
+		for(int i = 0; i <= n; i++){
+			leftClick();
+			nbOeuf--;
+		 }
+	}
+	private void cliqueCrevette(int n){
+		robot.mouseMove(70, 690);
+		for(int i = 0; i <= n; i++){
+			leftClick();
+			nbCrevette--;
+		 }
+	}
+	private void cliqueSaumon(int n){
+		robot.mouseMove(75, 900);
+		for(int i = 0; i <= n; i++){
+			leftClick();
+			nbSaumon--;
+		 }
+	}
+	private void cliqueViande(int n){
+		robot.mouseMove(185, 910);
+		for(int i = 0; i <= n; i++){
+			leftClick();
+			nbViande--;
+		 }
+	}
+	private void cliqueTapis(){
+		robot.mouseMove(400, 700);
+		leftClick();
+	}
+	//---------------------------------------------------------------------//
+	public void creerOni(){
+		cliqueRiz(2);
+		cliqueAlgue(1);
+		cliqueTapis();
+	}
+	public void creerCalif(){
+		cliqueRiz(1);
+		cliqueOeuf(1);
+		cliqueAlgue(1);
+		cliqueTapis();
+	}
+	public void creerMaki(){
+		cliqueRiz(1);
+		cliqueOeuf(2);
+		cliqueAlgue(1);
+		cliqueTapis();
+	}
+	public void creerSaumon(){
+		cliqueRiz(1);
+		cliqueAlgue(1);
+		cliqueSaumon(2);
+		cliqueTapis();
+	}
+	public void creerCrevette(){
+		cliqueRiz(1);
+		cliqueAlgue(1);
+		cliqueCrevette(2);
+		cliqueTapis();
+	}
+	public void creerUnagi(){
+		cliqueRiz(1);
+		cliqueAlgue(1);
+		cliqueViande(2);
+		cliqueTapis();
+	}
+	public void creerDragon(){
+		cliqueRiz(2);
+		cliqueAlgue(1);
+		cliqueOeuf(1);
+		cliqueViande(2);
+		cliqueTapis();
+	}
+	public void creerCombo(){
+		cliqueRiz(2);
+		cliqueAlgue(1);
+		cliqueOeuf(1);
+		cliqueViande(1);
+		cliqueSaumon(1);
+		cliqueCrevette(1);
+		cliqueTapis();
+	}
+	//--------------------------------------------------------------//
+	public void 
+}
