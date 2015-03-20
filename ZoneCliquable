@@ -1,0 +1,28 @@
+//Toute les différentes zones où l'on peu cliquer
+-----------------------------
+shrimp 72-692
+weed 80-814 
+salmon 75-900
+rice 185-685
+egg 185-795
+meat180-910
+tapis 400-700
+------------------------------
+telephone 1100-700
+-----------------------------
+topping 1000-580
+rice 1000-620
+----------------------------
+commRice 1100-600
+commShrimp 1000-500
+commMeat 1150-500
+commWeed 1000-580
+commEgg 1150-580
+commSalmon 950-700
+-----------------------------
+clicAssiette1 150-450
+clicAssiette2 350-450
+clicAssiette3 550-450
+clicAssiette4 750-450
+clicAssiette5 950-450
+clicAssiette6 1150-450
