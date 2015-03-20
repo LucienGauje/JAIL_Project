@@ -1,6 +1,6 @@
                   Heritage des classes
                   
-                                      (Abstrat) class Cliquer{
+                                      Interface Cliquer{
                                         =! zones cliquables
                                       public abstract cliquer(zonecliquable);
                                       }
