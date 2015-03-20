@@ -33,5 +33,6 @@ class CreerPlat{                           class CommanderIngredient{           
                                                       }
                                                         |
                                                         |
-                                                      class Compare(image1, image2){
+                                                      class Compare(image i){
+                                                        tab/liste d'images de reference
                                                       }
