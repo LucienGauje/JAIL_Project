@@ -27,8 +27,9 @@ class CreerPlat{//Lucien                           class CommanderIngredient{   
                                                       }
                                                         |
                                                         |
-                                                      class ZonestImage{ //Lucien
+                                                      class ZonestImage{ 
                                                         =! subImages (zones);
+                                                        zones cliquables //Lucien
                                                       }
                                                         |
                                                         |
