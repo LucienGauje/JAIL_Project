@@ -73,6 +73,11 @@ public class ClassClique {
 		robot.mouseMove(400, 700);
 		leftClick();
 	}
+	private void cliqueTelephone(){
+	        robot.mouseMove(1100, 700); 
+	        leftClick();
+	}
+	
 	//---------------------------------------------------------------------//
 	public void creerOni(){
 		cliqueRiz(2);
@@ -126,5 +131,52 @@ public class ClassClique {
 		cliqueTapis();
 	}
 	//--------------------------------------------------------------//
-	public void 
+	public void commandeRiz () {
+	        cliqueTelephone();
+	        robot.mouseMove(1000, 620);   //choix du type rice
+	        leftClick();
+	        robot.mouseMove(1100, 600);
+	        leftClick();
+	}
+	
+	public void commandeNori() {
+	       cliqueTelephone();
+	       robot.mouseMove(1000, 580);   //choix du type topping
+	       leftClick();
+	       robot.mouseMove(1000, 580);
+	       leftClick();
+	}
+	
+	public void commandeEggs() {
+	       cliqueTelephone();
+	       robot.mouseMove(1000, 580);   //choix du type topping
+	       leftClick();
+	       robot.mouseMove(1150, 580);
+	       leftClick();
+	}
+	
+	public void commandeShrimp() {
+	       cliqueTelephone();
+	       robot.mouseMove(1000, 580);   //choix du type topping
+	       leftClick();
+	       robot.mouseMove(1000, 500);
+	       leftClick();
+	}
+	
+	public void commandeSalmon() {
+	       cliqueTelephone();
+	       robot.mouseMove(1000, 580);   //choix du type topping
+	       leftClick();
+	       robot.mouseMove(950, 700);
+	       leftClick();
+	}
+	
+	public void commandeMeat() {
+	       cliqueTelephone();
+	       robot.mouseMove(1000, 580);   //choix du type topping
+	       leftClick();
+	       robot.mouseMove(1150, 500);
+	       leftClick();
+	}
+	
 }
