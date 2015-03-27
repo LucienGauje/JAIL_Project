@@ -9,10 +9,10 @@
     ---------------------------------------------------------------------------------------------------------------------------------------------------------------
     |                                                     |                                             |                                                         |
     |                                                     |                                             |                                                         |
-class CreerPlat{                           class CommanderIngredient{                              class Assiette{                                          class CliqueDefaut{
+class CreerPlat{//Lucien                           class CommanderIngredient{                              class Assiette{                                          class CliqueDefaut{
   public CreerPlat(){};                      public CommanderIngredient(){};                         public Assiette(){}                                      public CliqueDefaut();
-  public void creerPlat(String p){           public void cliqueCommande(zonecliquable q);           public void cliqueAssiette(zonecliquable a);              public void Debut();
-  si p = onigri                              public void verifIngredient(tab de string);            (public void verifAssiette();)                             //clique sur les zones pour commencer le jeu
+  public void creerPlat(String p){           public void cliqueCommande(zonecliquable q);//Lucien           public void cliqueAssiette(zonecliquable a);              public void Debut();
+  si p = onigri                              public void verifIngredient(tab de string);//Jeremie            (public void verifAssiette();)                             //clique sur les zones pour commencer le jeu
     zone1.cliqueAliment(p);                   //verifie pour chaque ingredient (string)             }                                                         public void NiveauSuivant();
     zone3. etc                                 si assez, sinon appel à cliquerCommande                                                                         //clique sur les zones pour passer au niveau suivant
   si p = california                           }
@@ -22,20 +22,20 @@ class CreerPlat{                           class CommanderIngredient{           
 }
 
 
-                                                      class Capture{
+                                                      class Capture{ //Isaline
                                                         bufferedImage;
                                                       }
                                                         |
                                                         |
-                                                      class TraitementImage{
+                                                      class ZonestImage{ //Lucien
                                                         =! subImages (zones);
                                                       }
                                                         |
                                                         |
-                                                      class Plats(){
+                                                      class Plats(){  //Isaline
                                                         tab/liste d'images de reference
                                                       public Plats(){};
-                                                      public bool Compare(image i);//compare i avec les images de references
+                                                      public bool Compare(image i);//compare i avec les images de references 
                                                       public tab de String PlatsDemandes(tte les zones des bulles); //compare tte les bulles avec les images de reference (appel a compare)
                                                       }
                                                         |
