@@ -32,6 +32,9 @@ public class ClassClique {
 		for(int i = 0; i <= n; i++){
 			leftClick();
 			nbRiz--;
+			if (nbRiz <= 4){
+				commande Riz();
+			}
 		 }
 	}
 	private void cliqueAlgue(int n){
