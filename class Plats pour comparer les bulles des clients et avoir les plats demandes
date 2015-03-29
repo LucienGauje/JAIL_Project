@@ -24,7 +24,7 @@ class Plats extends ZoneImage (){
 		else if (compareImage(i, ZoneImage.z7)== true) return 7;
 		else if (compareImage(i, ZoneImage.z8)== true) return 8;
 	}
-	public static double compareImage(BufferedImage img1, BufferedImage img2){	//compare 2images
+	public static boolean compareImage(BufferedImage img1, BufferedImage img2){	//compare 2images
 	  if(img1.getWidth() != img2.getWidth() || img1.getHeight() != img2.getHeight()){ //si ils ont pas la même taille 
 	   if(img1.getWidth()*img1.getHeight() < img2.getWidth()*img2.getHeight()){ //img1 plus petit que img2 
 	    img2 = resize(img2, img1.getWidth(), img1.getHeight()); } 
