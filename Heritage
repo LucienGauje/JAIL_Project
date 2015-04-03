@@ -9,16 +9,16 @@
     ---------------------------------------------------------------------------------------------------------------------------------------------------------------
     |                                                     |                                             |                                                         |
     |                                                     |                                             |                                                         |
-class CreerPlat{//Lucien                           class CommanderIngredient{                              class Assiette{                                          class CliqueDefaut{
-  public CreerPlat(){};                      public CommanderIngredient(){};                         public Assiette(){}                                      public CliqueDefaut();
-  public void creerPlat(int p){           public void cliqueCommande(zonecliquable q);//Lucien           public void cliqueAssiette(zonecliquable a);              public void Debut();
+class CreerPlat{//Lucien                           class CommanderIngredient{                        class Assiette{                                          class CliqueDefaut{
+  public CreerPlat(){};                      public CommanderIngredient(){};                           public Assiette(){}                                      public CliqueDefaut();
+  public void creerPlat(int p){           private void cliqueCommande(zonecliquable q);//Lucien        public void cliqueAssiette(zonecliquable a);             public void Debut();
   si p = onigri                              public void verifIngredient(tab de string);//Jeremie            (public void verifAssiette();)                             //clique sur les zones pour commencer le jeu
-    zone1.cliqueAliment(p);                   //verifie pour chaque ingredient (string)             }                                                         public void NiveauSuivant();
+    zone1.cliqueAliment(p);                   //verifie pour chaque ingredient (string)             }                                                           public void NiveauSuivant();
     zone3. etc                                 si assez, sinon appel à cliquerCommande                                                                         //clique sur les zones pour passer au niveau suivant
   si p = california                           }
     etc
   }
-  void cliqueAliment(int n);//n fois le mm aliment
+  private void cliqueAliment(int n);//n fois le mm aliment
 }
 
 
