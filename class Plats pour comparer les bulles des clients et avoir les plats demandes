@@ -1,6 +1,6 @@
 class Plats extends ZoneImage (){
 	public HashMap <Integer, String> plats; //8plats
-	public String[] platsDemandes;
+	public ArrayList <Integer> platsDemandes;
 	public Plats(){
 		plats = new HashMap <Integer, String> (8); //8plats
 		plats.put(1,"onigiri");
@@ -24,7 +24,7 @@ class Plats extends ZoneImage (){
 		else if (compareImage(i, ZoneImage.z7)== true) return 7;
 		else if (compareImage(i, ZoneImage.z8)== true) return 8;
 	}
-	public static boolean compareImage(BufferedImage img1, BufferedImage img2){	//compare 2images
+	public static double compareImage(BufferedImage img1, BufferedImage img2){	//compare 2images
 	  if(img1.getWidth() != img2.getWidth() || img1.getHeight() != img2.getHeight()){ //si ils ont pas la même taille 
 	   if(img1.getWidth()*img1.getHeight() < img2.getWidth()*img2.getHeight()){ //img1 plus petit que img2 
 	    img2 = resize(img2, img1.getWidth(), img1.getHeight()); } 
@@ -60,7 +60,7 @@ class Plats extends ZoneImage (){
 	  return out; 
 	}
 	
-	public tab de String PlatsDemandes(){ //compare tte les bulles avec les images de reference (appel a compare)
+	public ArrayList <Integer> PlatsDemandes(){ //compare tte les bulles avec les images de reference (appel a compare)
 		this.platsDemandes.add( Compare(ZoneImage.bulle1) ); //ajout du 1er plat demande
 		this.platsDemandes.add( Compare(ZoneImage.bulle2) );
 		this.platsDemandes.add( Compare(ZoneImage.bulle3) );
