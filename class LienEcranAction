@@ -1,0 +1,28 @@
+class LienEcranAction{  //fait un lien entre le traitement d'images et les actions qui en découlent
+
+ //pour chaque plat p reconnu on utilise la methode CreerPlat(p) et on le supprime du tableau
+public void LPlats(ArrayList <Integer> plats){
+	for (Integer p : plats) {
+	CreerPlat.creerplat(p);
+	
+	}
+	plats.removeAll();
+}
+//appel à cliqueAssiette(a) pour une zonecliquable a
+public void LAssiette(tab des zonesAssiettes){
+	for (zonecliquable a : tab){	//pour chaque zone assiettes
+		if (fonction boolean de assiettes = true) {
+		Assiette.cliqueAssiette(zonecliquable a);
+		}
+	}
+}         
+public void LDebut(){            //appel à Debut()
+	CliqueDefaut.Debut();
+}
+public void LNiveauSuivant(){     //appel à NiveauSuivant()
+	CliqueDefaut.NiveauSuivant();
+}
+public void LCommander(){        //appel à verifIngredient(tab de string)
+	CommanderIngredient.verifIngredient(tab de string);
+}
+}
