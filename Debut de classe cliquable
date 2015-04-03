@@ -12,19 +12,19 @@ public class ClassClique {
 	private int nbAlgue=10;
 	private int nbOeuf=10;
 	private int nbCrevette=10;
-	private int nbSaumon=5;
-	private int nbViande=5;
-	
+	private int nbSaumon=10;
+	private int nbViande=10;
+
 	public ClassClique() throws AWTException{
 	}
-	
+
 	private void leftClick()
 	{
 		robot.delay(1000);
-	    robot.mousePress(InputEvent.BUTTON1_MASK);
-	    robot.delay(1000);
-	    robot.mouseRelease(InputEvent.BUTTON1_MASK);
-	    robot.delay(1000);
+		robot.mousePress(InputEvent.BUTTON1_MASK);
+		robot.delay(1000);
+		robot.mouseRelease(InputEvent.BUTTON1_MASK);
+		robot.delay(1000);
 	}
 	//-----------------------------------------------------------//
 	private void cliqueRiz(int n){
@@ -35,17 +35,17 @@ public class ClassClique {
 			if (nbRiz <= 4){
 				commandeRiz();
 			}
-		 }
+		}
 	}
 	private void cliqueAlgue(int n){
 		robot.mouseMove(80, 815);
 		for(int i = 0; i <= n; i++){
 			leftClick();
 			nbAlgue--;
-                 	if (nbAlgue <= 4){
-	        		commandeNori();
-			}			
-		 }
+			if (nbAlgue <= 4){
+				commandeNori();
+			}
+		}
 	}
 	private void cliqueOeuf(int n){
 		robot.mouseMove(185, 795);
@@ -53,9 +53,9 @@ public class ClassClique {
 			leftClick();
 			nbOeuf--;
 			if (nbOeuf <= 4){
-			       commandeEggs();
+				commandeEggs();
 			}
-		 }
+		}
 	}
 	private void cliqueCrevette(int n){
 		robot.mouseMove(70, 690);
@@ -63,9 +63,9 @@ public class ClassClique {
 			leftClick();
 			nbCrevette--;
 			if (nbCrevette <= 4){
-		        	commandeShrimp();
+				commandeShrimp();
 			}
-		 }
+		}
 	}
 	private void cliqueSaumon(int n){
 		robot.mouseMove(75, 900);
@@ -73,9 +73,9 @@ public class ClassClique {
 			leftClick();
 			nbSaumon--;
 			if (nbSaumon <= 4){
-		        	commandeSalmon();
+				commandeSalmon();
 			}
-		 }
+		}
 	}
 	private void cliqueViande(int n){
 		robot.mouseMove(185, 910);
@@ -83,19 +83,18 @@ public class ClassClique {
 			leftClick();
 			nbViande--;
 			if (nbViande <= 4){
-		        	commandeMeat();
+				commandeMeat();
 			}
-		 }
+		}
 	}
 	private void cliqueTapis(){
 		robot.mouseMove(400, 700);
 		leftClick();
 	}
 	private void cliqueTelephone(){
-	        robot.mouseMove(1100, 700); 
-	        leftClick();
+		robot.mouseMove(1100, 700);
+		leftClick();
 	}
-	
 	//---------------------------------------------------------------------//
 	public void creerOni(){
 		cliqueRiz(2);
@@ -149,52 +148,68 @@ public class ClassClique {
 		cliqueTapis();
 	}
 	//--------------------------------------------------------------//
+	public void creationRecette(int comm){
+
+		switch (comm){
+		case 1: creerOni();
+		break;
+		case 2: creerCalif();
+		break;
+		case 3: creerMaki();
+		break;
+		case 4: creerSaumon();
+		break;
+		case 5: creerCrevette();
+		break;
+		case 6: creerUnagi();
+		break;
+		case 7: creerDragon();
+		break;
+		case 8: creerCombo();
+		default:;
+		}
+	}
+	//----------------------------------------------------------------------//
 	public void commandeRiz () {
-	        cliqueTelephone();
-	        robot.mouseMove(1000, 620);   //choix du type rice
-	        leftClick();
-	        robot.mouseMove(1100, 600);
-	        leftClick();
+		cliqueTelephone();
+		robot.mouseMove(1000, 620); //choix du type rice
+		leftClick();
+		robot.mouseMove(1100, 600);
+		leftClick();
 	}
-	
 	public void commandeNori() {
-	       cliqueTelephone();
-	       robot.mouseMove(1000, 580);   //choix du type topping
-	       leftClick();
-	       robot.mouseMove(1000, 580);
-	       leftClick();
+		cliqueTelephone();
+		robot.mouseMove(1000, 580); //choix du type topping
+		leftClick();
+		robot.mouseMove(1000, 580);
+		leftClick();
 	}
-	
 	public void commandeEggs() {
-	       cliqueTelephone();
-	       robot.mouseMove(1000, 580);   //choix du type topping
-	       leftClick();
-	       robot.mouseMove(1150, 580);
-	       leftClick();
+		cliqueTelephone();
+		robot.mouseMove(1000, 580); //choix du type topping
+		leftClick();
+		robot.mouseMove(1150, 580);
+		leftClick();
 	}
-	
 	public void commandeShrimp() {
-	       cliqueTelephone();
-	       robot.mouseMove(1000, 580);   //choix du type topping
-	       leftClick();
-	       robot.mouseMove(1000, 500);
-	       leftClick();
+		cliqueTelephone();
+		robot.mouseMove(1000, 580); //choix du type topping
+		leftClick();
+		robot.mouseMove(1000, 500);
+		leftClick();
 	}
-	
 	public void commandeSalmon() {
-	       cliqueTelephone();
-	       robot.mouseMove(1000, 580);   //choix du type topping
-	       leftClick();
-	       robot.mouseMove(950, 700);
-	       leftClick();
+		cliqueTelephone();
+		robot.mouseMove(1000, 580); //choix du type topping
+		leftClick();
+		robot.mouseMove(950, 700);
+		leftClick();
 	}
-	
 	public void commandeMeat() {
-	       cliqueTelephone();
-	       robot.mouseMove(1000, 580);   //choix du type topping
-	       leftClick();
-	       robot.mouseMove(1150, 500);
-	       leftClick();
+		cliqueTelephone();
+		robot.mouseMove(1000, 580); //choix du type topping
+		leftClick();
+		robot.mouseMove(1150, 500);
+		leftClick();
 	}
-	
 }
