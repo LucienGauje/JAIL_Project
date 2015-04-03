@@ -41,7 +41,7 @@ class CreerPlat{//Lucien                           class CommanderIngredient{   
                                                       }
                                                         |
                                                         |
-                                                      class LienEcranAction{
+                                                      class LienEcranAction{  //Isaline
                                                         
                                                         public void LPlats(tab de PlatsDemandes); //pour chaque plat p on utilise la methode CreerPlat(p)
                                                         public void LAssiette(tab des zonesAssiettes);         //appel à cliqueAssiette(a) pour une zonecliquable a
