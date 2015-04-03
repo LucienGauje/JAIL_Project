@@ -61,13 +61,11 @@ class Plats extends ZoneImage (){
 	}
 	
 	public ArrayList <Integer> PlatsDemandes(){ //compare tte les bulles avec les images de reference (appel a compare)
-		this.platsDemandes.add( Compare(ZoneImage.bulle1) ); //ajout du 1er plat demande
-		this.platsDemandes.add( Compare(ZoneImage.bulle2) );
-		this.platsDemandes.add( Compare(ZoneImage.bulle3) );
-		this.platsDemandes.add( Compare(ZoneImage.bulle4) );
-		this.platsDemandes.add( Compare(ZoneImage.bulle5) );
-		this.platsDemandes.add( Compare(ZoneImage.bulle6) );
-		this.platsDemandes.add( Compare(ZoneImage.bulle7) );
-		this.platsDemandes.add( Compare(ZoneImage.bulle8) );
+		this.platsDemandes.add( Compare(SubImage.subImage1) ); //ajout du 1er plat demande
+		this.platsDemandes.add( Compare(SubImage.subImage2) );
+		this.platsDemandes.add( Compare(SubImage.subImage3) );
+		this.platsDemandes.add( Compare(SubImage.subImage4) );
+		this.platsDemandes.add( Compare(SubImage.subImage5) );
+		this.platsDemandes.add( Compare(SubImage.subImage6) );
 	}
 }
