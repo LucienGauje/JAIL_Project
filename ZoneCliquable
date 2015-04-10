@@ -28,6 +28,8 @@ clicAssiette5 950-450
 clicAssiette6 1150-450
 -----------------------------
 code rgb rose assiette : r255 g153 b203
+code rgb bleue assiette : r1 g101 b255
+code rgb rouge assiette : r254 g0 b0
 -----------------------------
 clicPlay 620-430
 clicContinue 600-810
