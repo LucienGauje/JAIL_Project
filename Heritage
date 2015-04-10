@@ -9,7 +9,7 @@
     ---------------------------------------------------------------------------------------------------------------------------------------------------------------
     |                                                     |                                             |                                                         |
     |                                                     |                                             |                                                         |
-class CreerPlat{//Lucien                           class CommanderIngredient{                        class Assiette{                                          class CliqueDefaut{
+class CreerPlat{//Lucien                           class CommanderIngredient{                        class Assiette{                                          class CliqueDefaut{     //Isaline
   public CreerPlat(){};                      public CommanderIngredient(){};                           public Assiette(){}                                      public CliqueDefaut();
   public void creerPlat(int p){           private void cliqueCommande(zonecliquable q);//Lucien        public void cliqueAssiette(zonecliquable a);             public void Debut();
   si p = onigri                              public void verifIngredient(tab de string);//Jeremie            (public void verifAssiette();)                             //clique sur les zones pour commencer le jeu
