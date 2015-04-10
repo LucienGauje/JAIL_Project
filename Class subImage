@@ -29,7 +29,7 @@ public class SubImage {
 	
 	//----------------------------------------------------------------------------//
 	
-	BufferedImage listeImage []= {
+	BufferedImage listeSubImage []= {
 			subImage(80,120,h,l),
 			subImage(280,120,h,l),
 			subImage(482,120,h,l),
@@ -41,14 +41,20 @@ public class SubImage {
 
 	 public boolean verifEtat (BufferedImage img, int h, int l){
 		 int color = img.getRGB(h,l);
-		 if (color == 255255255||color==255153203||color==001101255||color==224000000){
+		 if (color == 255255255){
 			 return true;
-		 } 
-		 
+		 } else {
+			 if (color == 0000000){
+				 return true;
+			 }
+		 }
 		return false;
 	 }
 	 
-	 //------------------------------------------------------------------------------//
+	 //----------------------------------------------------------------------//
 	 
+	 public BufferedImage [] getSubImages(){
+		 return listeSubImage;
+	 }
 	 
 }
