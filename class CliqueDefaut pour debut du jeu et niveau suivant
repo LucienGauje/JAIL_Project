@@ -1,0 +1,18 @@
+class CliqueDefaut{
+	public CliqueDefaut();
+	public void Debut() {  //clique sur les zones pour commencer le jeu
+		robot.mouseMove(620,430);
+		leftClick();
+		robot.mouseMove(600,810);
+		leftClick();
+		robot.mouseMove(1150,930);
+		leftClick();
+		robot.mouseMove(590,780);
+		leftClick();
+	}
+	public void NiveauSuivant() { //clique sur les zones pour passer au niveau suivant
+		robot.mouseMove(590,780);
+		leftClick();
+		leftClick(); // car 2eme continue
+	}
+}
