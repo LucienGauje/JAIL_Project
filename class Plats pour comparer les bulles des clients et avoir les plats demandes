@@ -15,16 +15,16 @@ class Plats extends ZoneImage (){
 		
 	};
 	public int Compare(BufferedImage i) { //compare i avec les images de references
-		if (compareImage(i, ZoneImage.z1)== true) return 1;
-		else if (compareImage(i, ZoneImage.z2)== true) return 2;
-		else if (compareImage(i, ZoneImage.z3)== true) return 3;
-		else if (compareImage(i, ZoneImage.z4)== true) return 4;
-		else if (compareImage(i, ZoneImage.z5)== true) return 5;
-		else if (compareImage(i, ZoneImage.z6)== true) return 6;
-		else if (compareImage(i, ZoneImage.z7)== true) return 7;
-		else if (compareImage(i, ZoneImage.z8)== true) return 8;
+		if (compareImage(i, SubImage.z1)== true) return 1;	//penser a faire un chemin pour image de reference car pas dans SubImage
+		else if (compareImage(i, SubImage.z2)== true) return 2;
+		else if (compareImage(i, SubImage.z3)== true) return 3;
+		else if (compareImage(i, SubImage.z4)== true) return 4;
+		else if (compareImage(i, SubImage.z5)== true) return 5;
+		else if (compareImage(i, SubImage.z6)== true) return 6;
+		else if (compareImage(i, SubImage.z7)== true) return 7;
+		else if (compareImage(i, SubImage.z8)== true) return 8;
 	}
-	public static double compareImage(BufferedImage img1, BufferedImage img2){	//compare 2images
+	public static double compareImage(BufferedImage img1, BufferedImage img2){	//compare 2 images
 	  if(img1.getWidth() != img2.getWidth() || img1.getHeight() != img2.getHeight()){ //si ils ont pas la même taille 
 	   if(img1.getWidth()*img1.getHeight() < img2.getWidth()*img2.getHeight()){ //img1 plus petit que img2 
 	    img2 = resize(img2, img1.getWidth(), img1.getHeight()); } 
@@ -60,12 +60,9 @@ class Plats extends ZoneImage (){
 	  return out; 
 	}
 	
-	public ArrayList <Integer> PlatsDemandes(){ //compare tte les bulles avec les images de reference (appel a compare)
-		this.platsDemandes.add( Compare(SubImage.subImage1) ); //ajout du 1er plat demande
-		this.platsDemandes.add( Compare(SubImage.subImage2) );
-		this.platsDemandes.add( Compare(SubImage.subImage3) );
-		this.platsDemandes.add( Compare(SubImage.subImage4) );
-		this.platsDemandes.add( Compare(SubImage.subImage5) );
-		this.platsDemandes.add( Compare(SubImage.subImage6) );
+public ArrayList <Integer> PlatsDemandes(){ //compare tte les bulles avec les images de reference (appel a compare)
+		for (BufferedImage bulle : SubImage.listeImage) {	//pour chaque bulle des clients
+		this.platsDemandes.add( Compare(bulle) ); //ajout du 1er plat demande
+		}
 	}
 }
