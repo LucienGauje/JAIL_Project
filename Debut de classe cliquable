@@ -95,6 +95,37 @@ public class ClassClique {
 		robot.mouseMove(1100, 700);
 		leftClick();
 	}
+	
+	private void cliqueAssiette1(){
+	robot.mouseMove(150, 450);
+	leftClick();
+	}
+	
+	private void cliqueAssiette2(){
+	robot.mouseMove(350, 450);
+	leftClick();
+	}
+	
+	private void cliqueAssiette3(){
+	robot.mouseMove(550, 450);
+	leftClick();
+	}
+	
+	private void cliqueAssiette4(){
+	robot.mouseMove(750, 450);
+	leftClick();
+	}
+	
+	private void cliqueAssiette5(){
+	robot.mouseMove(950, 450);
+	leftClick();
+	}
+	
+	private void cliqueAssiette6(){
+	robot.mouseMove(1150, 450);
+	leftClick();
+	}
+	
 	//---------------------------------------------------------------------//
 	public void creerOni(){
 		cliqueRiz(2);
