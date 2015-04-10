@@ -29,7 +29,8 @@ clicAssiette6 1150-450
 -----------------------------
 code rgb rose assiette : r255 g153 b203
 -----------------------------
-clicPlay 620-434
+clicPlay 620-430
 clicContinue 600-810
 clicSkip 1150-930
+clicContinue2 590-780
 clicNiveauSuivant 
