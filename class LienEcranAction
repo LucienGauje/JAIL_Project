@@ -1,4 +1,4 @@
-->Il manque les zonesimages assiettes pour determiner quand une assiette est presente
+->Il manque les bufferedimages des assiettes pour utiliser la fonction SubImage.verifEtat
 
 
 	class LienEcranAction extends Plats{  //fait un lien entre le traitement d'images et les actions qui en découlent
@@ -12,7 +12,10 @@ public void LPlats(Plats.platsDemandes){	//Plats.platsDemandes : ArrayList <Inte
 	plats.removeAll();
 }
 //appel à cliqueAssiette(a) pour une zonecliquable a
-public void LAssiette(tab des zonesAssiettes){
+public void LAssiette(tab des zonesAssiettes){ //SubImage.verifEtat(,150,450), SubImage.verifEtat(,350,450), SubImage.verifEtat(,550,450), SubImage.verifEtat(,750,450), SubImage.verifEtat(,950,450), SubImage.verifEtat(,1150,450)
+//SubImage.verifEtat (BufferedImage img, int h, int l) renvoie vraie si assiette
+
+//creer un tableau de buffered image assiette qui sont vraie
 	for (zonecliquable a : tab){	//pour chaque zone assiettes
 		if (fonction boolean de assiettes = true) {
 		Assiette.cliqueAssiette(zonecliquable a);
