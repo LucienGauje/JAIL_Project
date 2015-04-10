@@ -1,7 +1,10 @@
-class LienEcranAction{  //fait un lien entre le traitement d'images et les actions qui en découlent
+->Il manque les zonesimages assiettes pour determiner quand une assiette est presente
+
+
+	class LienEcranAction extends Plats{  //fait un lien entre le traitement d'images et les actions qui en découlent
 
  //pour chaque plat p reconnu on utilise la methode CreerPlat(p) et on le supprime du tableau
-public void LPlats(ArrayList <Integer> plats){
+public void LPlats(Plats.platsDemandes){	//Plats.platsDemandes : ArrayList <Integer> plats
 	for (Integer p : plats) {
 	CreerPlat.creerplat(p);
 	
