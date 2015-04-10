@@ -1,0 +1,33 @@
+public class Assiette {
+	
+	if (verifEtat(subimage.image,150,450)==true){
+		
+	 clique.cliqueAssiette1();
+	}
+	
+	if (verifEtat(subimage.image,350,450)==true){
+		
+		clique.cliqueAssiette2();
+	}
+	
+		if (verifEtat(subimage.image,550,450)==true){
+		
+		clique.cliqueAssiette3();
+	}
+	
+		if (verifEtat(subimage.image,750,450)==true){
+		
+		clique.cliqueAssiette4();
+	}
+	
+		if (verifEtat(subimage.image,950,450)==true){
+		
+		clique.cliqueAssiette5();
+	}
+	
+		if (verifEtat(subimage.image,1150,450)==true){
+		
+		clique.cliqueAssiette6();
+	}
+
+}
