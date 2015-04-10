@@ -1,3 +1,5 @@
+->Il manque le chemin vers les images de references pour la fonction compare
+
 class Plats extends ZoneImage (){
 	public HashMap <Integer, String> plats; //8plats
 	public ArrayList <Integer> platsDemandes;
