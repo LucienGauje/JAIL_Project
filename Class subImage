@@ -41,13 +41,10 @@ public class SubImage {
 
 	 public boolean verifEtat (BufferedImage img, int h, int l){
 		 int color = img.getRGB(h,l);
-		 if (color == 255255255){
+		 if (color == 255255255||color==255153203||color==001101255||color==224000000){
 			 return true;
-		 } else {
-			 if (color == 0000000){ // a changer pour le rose/bleu/rouge
-				 return true;
-			 }
-		 }
+		 } 
+		 
 		return false;
 	 }
 	 
