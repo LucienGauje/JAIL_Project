@@ -21,3 +21,5 @@ III) organisation du travail, les problemes rencontrés et leur solution
 IV) annexe : le manuel de l'utilisateur
 
 Conclusion : 
+découvertes des classe de l’API standard tels que 'BufferedImage', 'ImageIO', 'Robot', et de 'threads'
+comprendre le traitement d'images et les pixels associés
