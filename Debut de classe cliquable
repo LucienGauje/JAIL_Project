@@ -11,9 +11,9 @@ public class ClassClique {
 	private int nbRiz=10; //peut ête a modifier plus tard
 	private int nbAlgue=10;
 	private int nbOeuf=10;
-	private int nbCrevette=10;
-	private int nbSaumon=10;
-	private int nbViande=10;
+	private int nbCrevette=5;
+	private int nbSaumon=5;
+	private int nbViande=5;
 
 	public ClassClique() throws AWTException{
 	}
