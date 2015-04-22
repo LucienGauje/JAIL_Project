@@ -17,7 +17,7 @@ Intro : présenter le but, et parler des differentes choses, apprises durant le 
 
 I) contribution claire et précise de chacun
 
-Jeremie :  class CliqueDefault{}(CliqueAssiette() ) 
+Jeremie :  class CliqueDefault{}(CliqueAssiette() ) , class Commande (verifIngredient() )
 Asma :
 Lucien : class Recette{}, class Commande{}, class Ingredient{}, class SubImage{}
 Isaline : class CaptureEcran{}, class CreerPlat{}, (class CompareImage{}), class Jeu{} (JeuPlat(), JeuVerifIngredient(), JeuCliqueDefault() ), class CliqueDefault{} (CliqueSuivant() )
