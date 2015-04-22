@@ -16,12 +16,18 @@ le code source (claire et commenté)
 Intro : présenter le but, et parler des differentes choses, apprises durant le semestre, utilisé pour ce projet
 
 I) contribution claire et précise de chacun
-Jeremie : 
+
+Jeremie :  class CliqueDefault{}(CliqueAssiette() ) 
 Asma :
 Lucien : class Recette{}, class Commande{}, class Ingredient{}, class SubImage{}
-Isaline : class CaptureEcran{}, class CreerPlat{}, (class CompareImage{}), class Jeu{}, class CliqueDefault{}
-II) description des algorithmes et la hierarchie des classes du programme
+Isaline : class CaptureEcran{}, class CreerPlat{}, (class CompareImage{}), class Jeu{} (JeuPlat(), JeuVerifIngredient(), JeuCliqueDefault() ), class CliqueDefault{} (CliqueSuivant() )
+
+II) description des algorithmes et la hierarchie des classes du programme(Diagramme de classes)
 III) organisation du travail, les problemes rencontrés et leur solution
+prob:
+
+solutions:
+
 IV) annexe : le manuel de l'utilisateur
 
 Conclusion : 
