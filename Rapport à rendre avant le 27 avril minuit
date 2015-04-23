@@ -23,6 +23,7 @@ Intro : (présenter le but, et parler des differentes choses, apprises durant le
 	- de rechercher dans la base de données/classe Recette, les ingrédients ainsi que leur nombre  dont nous avons besoin pour la préparation du plat
 	- de cliquer sur les différentes zones qui correspondent aux différents ingrédients
 	- de cliquer sur le tapis pour obtenir le plat souhaité et pour servir le client
+	- de cliquer sur l'assiette vide du client une fois qu'il est parti pour qu'un autre client puisse commander
 Il faut également pouvoir commander de nouveaux ingrédients à l'aide du téléphone, si nous sommes en rupture de stock.
  Toutes ces aptitudes/compétences peuvent etre classées en 3 catégories :
 	- le traitement d'image ainsi que sa capture faite auparavant
