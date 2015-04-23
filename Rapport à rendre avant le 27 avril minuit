@@ -14,6 +14,7 @@ le code source (claire et commenté)
          COMPTE-RENDU
          
 Intro : (présenter le but, et parler des differentes choses, apprises durant le semestre, utilisé pour ce projet)
+
   Nous, une équipe de 3 personnes, avons réalisé un projet commun. Ceci est une 'Intelligence Artificielle' capable de jouer à Sushi Go Round qui est un jeu à base de sprits. Les sprits sont des éléments graphiques de taille fixe, positionnés à une zone donnée sur l'image du jeu. 
   Le but de ce jeu est d'identifier/analyser les commandes des clients, les fabriquer puis servir ces clients.
   
@@ -27,6 +28,12 @@ Il faut également pouvoir commander de nouveaux ingrédients à l'aide du tél�
 	- le traitement d'image ainsi que sa capture faite auparavant
 	- les actions qui en découlent
 	- et la capacité de lier traitement d'image et actions (appels de fonctions)
+	
+   Cela nous amène au point des différentes compétences apprises au cours de ce semestre qui ont été utiles pour mener à bien ce projet. 
+ Le code du projet se fait en langage JAVA. De plus, nous avons élaboré un diagramme de classes c'est à dire un diagramme parlant de l'héritage/ la hiérarchisation des classes crées. Ceci fait référence au cours de POnGL (programmation objet et génie logiciel). 
+ (au moins encore 1 cours en +, peut etre maths pour info pour l'algorithme)
+ 
+   Dans ce rapport, nous allons donc détaillé la répartition du travail, les algorithmes choisis, la hiérarchie des classes construites ainsi que les divers problèmes rencontrés et leur solutions. Nous fourniront, par la suite, un manuel afin d'utiliser notre 'Intelligence Artificielle'.
 
 I) contribution claire et précise de chacun
 
