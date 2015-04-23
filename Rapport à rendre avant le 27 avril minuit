@@ -37,11 +37,21 @@ Il faut également pouvoir commander de nouveaux ingrédients à l'aide du tél�
    Dans ce rapport, nous allons donc détailler la répartition du travail, les algorithmes choisis, la hiérarchie des classes construites ainsi que les divers problèmes rencontrés et leur solutions. Nous fourniront, par la suite, un manuel afin d'utiliser notre 'Intelligence Artificielle'.
 
 I) contribution claire et précise de chacun
-
-Jeremie :  class CliqueDefault{}(CliqueAssiette() ) , class Commande (verifIngredient() )
+( Jeremie :  class CliqueDefault{}(CliqueAssiette() ) , class Commande (verifIngredient() )
 Asma :
 Lucien : class Recette{}, class Commande{}, class Ingredient{}, class SubImage{}
 Isaline : class CaptureEcran{}, class CreerPlat{}, (class CompareImage{}), class Jeu{} (JeuPlat(), JeuVerifIngredient(), JeuCliqueDefault() ), class CliqueDefault{} (CliqueSuivant() )
+)
+
+Nous nous sommes répartis le travail comme suit :
+- Jeremie s'est occupé de la partie traitement d'image concernant la vérification du nombre d'ingrédient en stock et de la partie action par rapport au fait de cliquer sur les différentes assiettes vides.
+Il a donc crée la méthode 'verifIngredient()'  de la classe 'Commande' et la méthode 'cliqueAssiette()' de la classe 'CliqueDefault'.
+- Lucien s'est concentré sur la base de données Recette pour préparer les plats, la partie action au sujet du fait de cliquer sur les différents ingrédients, de cliquer sur le tapis ainsi que la partie traitement d'image touchant l'attribution des différentes zones (zones cliquables, zones bulle des clients) pour une image donnée (capture d’écran).
+Il a donc crée la classe 'Recettes', la classe 'Ingredient', la classe'Commande' et la classe 'SubImage'.
+- Isaline s'est chargé de la partie traitement d'image concernant la capture de l’écran du jeu, et la comparaison d'images pixel à pixel (bulle d'un client et plats pouvant être fabriqués) afin de déterminer le plat demandé ainsi que la création d'une base de données des divers plats demandés par les clients et s'est chargé de la partie action servant à cliquer au bon endroit lors du début du jeu, et pour le passage au niveau suivant.
+Elle a donc crée la classe 'CaptureEcran', la classe 'CompareImage', la classe 'CreerPlats' et la méthode 'cliqueSuivant()' de la classe 'CliqueDefault'.
+Elle a également établit un lien entre le traitement d'image et les actions en découlant c'est à dire : pour chaque plat dans le tableau des plats demandés, il y a appel à une fonction créant ce plat; appel à une fonction vérifiant s'il y a assez d’ingrédient, s'il n'y en a pas assez, alors appel à une fonction commandant cette ingrédient; pour chaque assiette reconnu, il y a appel à une fonction cliquant sur cette assiette. Cela correspond à la classe 'Jeu'.
+- Asma s'est occupé de/concentré sur...
 
 II) description des algorithmes et la hierarchie des classes du programme(Diagramme de classes)
 III) organisation du travail, les problemes rencontrés et leur solution
