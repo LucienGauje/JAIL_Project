@@ -13,7 +13,20 @@ le code source (claire et commenté)
 
          COMPTE-RENDU
          
-Intro : présenter le but, et parler des differentes choses, apprises durant le semestre, utilisé pour ce projet
+Intro : (présenter le but, et parler des differentes choses, apprises durant le semestre, utilisé pour ce projet)
+  Nous, une équipe de 3 personnes, avons réalisé un projet commun. Ceci est une 'Intelligence Artificielle' capable de jouer à Sushi Go Round qui est un jeu à base de sprits. Les sprits sont des éléments graphiques de taille fixe, positionnés à une zone donnée sur l'image du jeu. 
+  Le but de ce jeu est d'identifier/analyser les commandes des clients, les fabriquer puis servir ces clients.
+  
+    Afin d’être capable de jouer à ce jeu, plusieurs aptitudes/compétences doivent être mises en pratique telles que :
+	- de reconnaître un sprit, correspondant à un plat demandé, dans la bulle de chaque client qui sont au nombre de 6
+	- de rechercher dans la base de données/classe Recette, les ingrédients ainsi que leur nombre  dont nous avons besoin pour la préparation du plat
+	- de cliquer sur les différentes zones qui correspondent aux différents ingrédients
+	- de cliquer sur le tapis pour obtenir le plat souhaité et pour servir le client
+Il faut également pouvoir commander de nouveaux ingrédients à l'aide du téléphone, si nous sommes en rupture de stock.
+ Toutes ces aptitudes/compétences peuvent etre classées en 3 catégories :
+	- le traitement d'image ainsi que sa capture faite auparavant
+	- les actions qui en découlent
+	- et la capacité de lier traitement d'image et actions (appels de fonctions)
 
 I) contribution claire et précise de chacun
 
