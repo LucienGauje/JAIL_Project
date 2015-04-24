@@ -15,12 +15,16 @@ le code source (claire et commenté)
          
 Intro : (présenter le but, et parler des differentes choses, apprises durant le semestre, utilisé pour ce projet)
 
-  Nous, une équipe de 3 personnes, avons réalisé un projet commun. Ceci est une 'Intelligence Artificielle' capable de jouer à Sushi Go Round qui est un jeu à base de sprits. Les sprits sont des éléments graphiques de taille fixe, positionnés à une zone donnée sur l'image du jeu. 
+  Nous, une équipe de 3 personnes, avons réalisé un projet commun. Ceci est une 'Intelligence Artificielle' capable 
+  de jouer à Sushi Go Round qui est un jeu à base de sprits. Les sprits sont des éléments graphiques de taille fixe, 
+  positionnés à une zone donnée sur l'image du jeu. 
   Le but de ce jeu est d'identifier/analyser les commandes des clients, les fabriquer puis servir ces clients.
   
     Afin d’être capable de jouer à ce jeu, plusieurs aptitudes/compétences doivent être mises en pratique telles que :
-	- de reconnaître un sprit, correspondant à un plat demandé, dans la bulle de chaque client qui sont au nombre de 6
-	- de rechercher dans la base de données/classe Recette, les ingrédients ainsi que leur nombre  dont nous avons besoin pour la préparation du plat
+	- de reconnaître un sprit, correspondant à un plat demandé, dans la bulle de chaque client qui sont au nombre 
+	de 6
+	- de rechercher dans la base de données/classe Recette, les ingrédients ainsi que leur nombre  dont nous avons
+	besoin pour la préparation du plat
 	- de cliquer sur les différentes zones qui correspondent aux différents ingrédients
 	- de cliquer sur le tapis pour obtenir le plat souhaité et pour servir le client
 	- de cliquer sur l'assiette vide du client une fois qu'il est parti pour qu'un autre client puisse commander
@@ -30,27 +34,44 @@ Il faut également pouvoir commander de nouveaux ingrédients à l'aide du tél�
 	- les actions qui en découlent
 	- et la capacité de lier traitement d'image et actions (appels de fonctions)
 	
-   Cela nous amène au point des différentes compétences apprises au cours de ce semestre qui ont été utiles pour mener à bien ce projet. 
- Le code du projet se fait en langage JAVA. De plus, nous avons élaboré un diagramme de classes c'est à dire un diagramme parlant de l'héritage/ la hiérarchisation des classes crées. Ceci fait référence au cours de POnGL (programmation objet et génie logiciel). 
+   Cela nous amène au point des différentes compétences apprises au cours de ce semestre qui ont été utiles pour mener 
+   à bien ce projet. 
+ Le code du projet se fait en langage JAVA. De plus, nous avons élaboré un diagramme de classes c'est à dire un 
+ diagramme parlant de l'héritage/ la hiérarchisation des classes crées. Ceci fait référence au cours de POnGL 
+ (programmation objet et génie logiciel). 
  (au moins encore 1 cours en +, peut etre maths pour info pour l'algorithme)
  
-   Dans ce rapport, nous allons donc détailler la répartition du travail, les algorithmes choisis, la hiérarchie des classes construites ainsi que les divers problèmes rencontrés et leur solutions. Nous fourniront, par la suite, un manuel afin d'utiliser notre 'Intelligence Artificielle'.
+   Dans ce rapport, nous allons donc détailler la répartition du travail, les algorithmes choisis, la hiérarchie des 
+   classes construites ainsi que les divers problèmes rencontrés et leur solutions. Nous fourniront, par la suite, un 
+   manuel afin d'utiliser notre 'Intelligence Artificielle'.
 
 I) contribution claire et précise de chacun
 ( Jeremie :  class CliqueDefault{}(CliqueAssiette() ) , class Commande (verifIngredient() )
 Asma :
 Lucien : class Recette{}, class Commande{}, class Ingredient{}, class SubImage{}
-Isaline : class CaptureEcran{}, class CreerPlat{}, (class CompareImage{}), class Jeu{} (JeuPlat(), JeuVerifIngredient(), JeuCliqueDefault() ), class CliqueDefault{} (CliqueSuivant() )
+Isaline : class CaptureEcran{}, class CreerPlat{}, (class CompareImage{}), class Jeu{} (JeuPlat(), JeuVerifIngredient(), 
+JeuCliqueDefault() ), class CliqueDefault{} (CliqueSuivant() )
 )
 
 Nous nous sommes répartis le travail comme suit :
-- Jeremie s'est occupé de la partie traitement d'image concernant la vérification du nombre d'ingrédient en stock et de la partie action par rapport au fait de cliquer sur les différentes assiettes vides.
-Il a donc crée la méthode 'verifIngredient()'  de la classe 'Commande' et la méthode 'cliqueAssiette()' de la classe 'CliqueDefault'.
-- Lucien s'est concentré sur la base de données Recette pour préparer les plats, la partie action au sujet du fait de cliquer sur les différents ingrédients, de cliquer sur le tapis ainsi que la partie traitement d'image touchant l'attribution des différentes zones (zones cliquables, zones bulle des clients) pour une image donnée (capture d’écran).
+- Jeremie s'est occupé de la partie traitement d'image concernant la vérification du nombre d'ingrédient en stock et 
+de la partie action par rapport au fait de cliquer sur les différentes assiettes vides.
+Il a donc crée la méthode 'verifIngredient()'  de la classe 'Commande' et la méthode 'cliqueAssiette()' de la classe 
+'CliqueDefault'.
+- Lucien s'est concentré sur la base de données Recette pour préparer les plats, la partie action au sujet du fait de 
+cliquer sur les différents ingrédients, de cliquer sur le tapis ainsi que la partie traitement d'image touchant 
+l'attribution des différentes zones (zones cliquables, zones bulle des clients) pour une image donnée (capture d’écran).
 Il a donc crée la classe 'Recettes', la classe 'Ingredient', la classe'Commande' et la classe 'SubImage'.
-- Isaline s'est chargé de la partie traitement d'image concernant la capture de l’écran du jeu, et la comparaison d'images pixel à pixel (bulle d'un client et plats pouvant être fabriqués) afin de déterminer le plat demandé ainsi que la création d'une base de données des divers plats demandés par les clients et s'est chargé de la partie action servant à cliquer au bon endroit lors du début du jeu, et pour le passage au niveau suivant.
-Elle a donc crée la classe 'CaptureEcran', la classe 'CompareImage', la classe 'CreerPlats' et la méthode 'cliqueSuivant()' de la classe 'CliqueDefault'.
-Elle a également établit un lien entre le traitement d'image et les actions en découlant c'est à dire : pour chaque plat dans le tableau des plats demandés, il y a appel à une fonction créant ce plat; appel à une fonction vérifiant s'il y a assez d’ingrédient, s'il n'y en a pas assez, alors appel à une fonction commandant cette ingrédient; pour chaque assiette reconnu, il y a appel à une fonction cliquant sur cette assiette. Cela correspond à la classe 'Jeu'.
+- Isaline s'est chargé de la partie traitement d'image concernant la capture de l’écran du jeu, et la comparaison 
+d'images pixel à pixel (bulle d'un client et plats pouvant être fabriqués) afin de déterminer le plat demandé ainsi 
+que la création d'une base de données des divers plats demandés par les clients et s'est chargé de la partie action 
+servant à cliquer au bon endroit lors du début du jeu, et pour le passage au niveau suivant.
+Elle a donc crée la classe 'CaptureEcran', la classe 'CompareImage', la classe 'CreerPlats' et la méthode 
+'cliqueSuivant()' de la classe 'CliqueDefault'.
+Elle a également établit un lien entre le traitement d'image et les actions en découlant c'est à dire : pour chaque 
+plat dans le tableau des plats demandés, il y a appel à une fonction créant ce plat; appel à une fonction vérifiant 
+s'il y a assez d’ingrédient, s'il n'y en a pas assez, alors appel à une fonction commandant cette ingrédient; pour 
+chaque assiette reconnu, il y a appel à une fonction cliquant sur cette assiette. Cela correspond à la classe 'Jeu'.
 - Asma s'est occupé de/concentré sur...
 
 II) description des algorithmes et la hierarchie des classes du programme(Diagramme de classes)
