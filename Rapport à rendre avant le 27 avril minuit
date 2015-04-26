@@ -110,7 +110,32 @@ Pour se faire, on crée une HashMap de référence comportant chacun des 8 plats
 Ensuite, nous avons codé une fonction......
 .........
 
-
+HIERARCHIE DES CLASSES
+Le programme est organisée autour de 9 classes : 
+→ la classe 'jeu' qui a 3 méthodes et un constructeur
+Ceci est la classe principale du programme servant de lien entre traitement d'image et actions. 
+La méthode 'JeuPlats()' permet de préparer chacun des 6 plats demandés. 
+La méthode 'JeuDefault()' 
+La méthode 'JeuVerifIngredient()'
+→ la classe 'CaptureEcran' qui a 1 attribut et 1 méthode
+Elle sert, comme son nom l'indique, à faire une capture d'écran et stocke cette BufferedImage obtenu dans sa classe.
+(peut etre rajouté getCapture() pour mettre l'attribut en private)
+→ la classe 'SubImage' qui a 3 attributs et 2 méthodes
+Elle différencie, à partir de la capture d’écran, différentes sous-images telles que les zones cliquables et les bulles 
+des clients.
+→ la classe 'cliqueDefault' qui a 2 méthodes
+Cette classe sert à cliquer lors d'un début de jeu, du passage au niveau suivant ou lorsqu'une assiette d'un client 
+est vide.
+→ la classe 'CompareImage'qui a 1attribut et 2 méthodes 
+Cette classe est utilisée pour la comparaison d'images.
+→ la classe 'CreerPlats' qui a 2 attributs, 1 constructeur et 2 méthodes
+Elle sert à analyser et stocker dans une liste les plats demandés par les clients.
+→ la classe 'Ingrédient' qui a 1 attribut et 8 méthodes
+Elle sert à cliquer sur les ingrédients ou sur le tapis.
+→ la classe 'Recettes' qui a 7 méthodes
+Cette classe sert à appeler des méthodes de la classe ingrédient suivant le plat demandé.
+→ la classe 'Commande' qui a ? méthodes
+Elle sert à cliquer sur le téléphone pour commander l'ingrédient en rupture de stock.
 
 III) organisation du travail, les problemes rencontrés et leur solution
 prob:
