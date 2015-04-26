@@ -57,7 +57,7 @@ Nous nous sommes répartis le travail comme suit :
 - Jeremie s'est occupé de la partie traitement d'image concernant la vérification du nombre d'ingrédient en stock et 
 de la partie action par rapport au fait de cliquer sur les différentes assiettes vides.
 Il a donc crée la méthode 'verifIngredient()'  de la classe 'Commande' et la méthode 'cliqueAssiette()' de la classe 
-'CliqueDefault'.
+'CliqueDefault'. //a t on verifIngredient??
 - Lucien s'est concentré sur la base de données Recette pour préparer les plats, la partie action au sujet du fait de 
 cliquer sur les différents ingrédients, de cliquer sur le tapis ainsi que la partie traitement d'image touchant 
 l'attribution des différentes zones (zones cliquables, zones bulle des clients) pour une image donnée (capture d’écran).
@@ -66,8 +66,8 @@ Il a donc crée la classe 'Recettes', la classe 'Ingredient', la classe'Commande
 d'images pixel à pixel (bulle d'un client et plats pouvant être fabriqués) afin de déterminer le plat demandé ainsi 
 que la création d'une base de données des divers plats demandés par les clients et s'est chargé de la partie action 
 servant à cliquer au bon endroit lors du début du jeu, et pour le passage au niveau suivant.
-Elle a donc crée la classe 'CaptureEcran', la classe 'CompareImage', la classe 'CreerPlats' et la méthode 
-'cliqueSuivant()' de la classe 'CliqueDefault'.
+Elle a donc crée la classe 'CaptureEcran', la classe 'CompareImage', la classe 'CreerPlat' et les méthode 'Debut' 
+et 'NiveauSuivant()' de la classe 'CliqueDefault'.
 Elle a également établit un lien entre le traitement d'image et les actions en découlant c'est à dire : pour chaque 
 plat dans le tableau des plats demandés, il y a appel à une fonction créant ce plat; appel à une fonction vérifiant 
 s'il y a assez d’ingrédient, s'il n'y en a pas assez, alors appel à une fonction commandant cette ingrédient; pour 
