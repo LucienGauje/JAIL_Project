@@ -75,6 +75,43 @@ chaque assiette reconnu, il y a appel à une fonction cliquant sur cette assiett
 - Asma s'est occupé de/concentré sur...
 
 II) description des algorithmes et la hierarchie des classes du programme(Diagramme de classes)
+
+DESCRIPTIF DES ALGO
+Tout au long de ce projet, nous avons utilisé des classes de l'API standard comme
+- la classe 'BufferedImage' dans le but d'analyser, manipuler des images avec les méthodes :
+	→ getSubimage (int x, int y, int w, int h) qui retourne une sous-image définie par une zone rectangulaire 
+	spécifiée
+	→ getRGB(int x, int y) qui retourne une couleur des 3 pixels (rouge, vert, bleu) d'entiers (entre 0 et 255)
+- la classe 'ImageIO' pour récupérer les images de références dans le dossier du code à l'aide de la méthode :
+	→ read (new File(chemin de l'image) qui retourne une BufferedImage de l'image donnée en paramètre.
+- la classe'Robot' afin de faire une capture d’écran, de manipuler la souris et  d'attendre que tous les événements 
+actuellement sur la file d'attente d'événements ont été traités à l'aide des méthodes suivantes:
+	→ createScreenCapture (Rectangle screenRect) qui crée une image (BufferedImage) contenant des pixels lues 
+	à partir de l'écran
+	→ mouseMove (int x, int y) qui déplace le pointeur de la souris aux coordonnées écran donnée 
+	→ mousePress (int buttons) qui presse un ou plusieurs boutons de la souris
+	→  'waitForIdle()' qui attend que tous les événements créés ont été réalisés
+
+Comparaison d'images
+Il s'agit d'une comparaison pixel à pixel de 2 images données en paramètre. 
+Pour cela, nous avons crée une fonction qui redimensionne une image trop grande ou trop petite par rapport à 
+l'autre image. 
+Nous avons aussi codé une fonction booléenne retournant vraie si les 2images sont identique. Elle vérifie si ces 
+images sont à la même taille et si chaque pixel d'une image est similaire à un pixel de l'autre image aux mêmes 
+endroits. En effet, si le pixel d'une image est différent de celui de l'autre image, on incrémente un compteur 
+erreur tout en comptant le nombre total de pixels des images. Ensuite, on calcule un rapport entre le nombre 
+d'erreurs et le nombre total de pixels. C'est donc un flottant variant entre 0 et 1. Si ce rapport est supérieur 
+à 0.5 alors les 2 images ne sont pas les mêmes. Cela retourne donc faux. Sinon, le résultat est vrai.
+Cette comparaison d'images est implémenté dans la classe 'CompareImage()'
+Analyse des plats demandés et leur fabrication
+Afin de savoir quel type de plat il faut préparer, il faut d'abord faire une analyse de l'image au niveau des 
+bulles des 6 clients.
+Pour se faire, on crée une HashMap de référence comportant chacun des 8 plats. 
+Ensuite, nous avons codé une fonction......
+.........
+
+
+
 III) organisation du travail, les problemes rencontrés et leur solution
 prob:
 
