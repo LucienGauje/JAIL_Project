@@ -76,7 +76,7 @@ chaque assiette reconnu, il y a appel à une fonction cliquant sur cette assiett
 
 II) description des algorithmes et la hierarchie des classes du programme(Diagramme de classes)
 
-DESCRIPTIF DES ALGO
+DESCRIPTIF DES ALGO //à continuer
 Tout au long de ce projet, nous avons utilisé des classes de l'API standard comme
 - la classe 'BufferedImage' dans le but d'analyser, manipuler des images avec les méthodes :
 	→ getSubimage (int x, int y, int w, int h) qui retourne une sous-image définie par une zone rectangulaire 
@@ -110,7 +110,7 @@ Pour se faire, on crée une HashMap de référence comportant chacun des 8 plats
 Ensuite, nous avons codé une fonction......
 .........
 
-HIERARCHIE DES CLASSES
+HIERARCHIE DES CLASSES //à étoffer
 Le programme est organisée autour de 9 classes : 
 → la classe 'jeu' qui a 3 méthodes et un constructeur
 Ceci est la classe principale du programme servant de lien entre traitement d'image et actions. 
@@ -138,6 +138,7 @@ Cette classe sert à appeler des méthodes de la classe ingrédient suivant le p
 Elle sert à cliquer sur le téléphone pour commander l'ingrédient en rupture de stock.
 
 III) organisation du travail, les problemes rencontrés et leur solution
+
 prob:
 
 solutions:
