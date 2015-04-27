@@ -139,9 +139,17 @@ Elle sert à cliquer sur le téléphone pour commander l'ingrédient en rupture 
 
 III) organisation du travail, les problemes rencontrés et leur solution
 
-- prob: comparaison d'images (peut etre??) + chargement des plats de références
+- prob: comparaison d'images (peut etre??) + traitement de la BufferedImage 'CaptureEcran'  + chargement des plats de références
 
 - solutions:
+
+->problème pour le traitement de la BufferedImage 'CaptureEcran'  //à compléter
+Le but étant d'analyser l'image de la classe 'CaptureEcran', il fallait découper l'image en plusieurs petites images 
+qui par la suite seront utilisées à des fins différentes telles que déterminer les plats demandés des clients ou 
+cliquer sur les différents ingrédients pour fabriquer un plat souhaité.
+Au début, ….
+Par la suite, nous avons convenu de créer divers SubImages et de stockées celles-ci dans la classe SubImage 
+préalablement conçue. L'utilisation de la méthode 'getSubimage()' de la classe 'BufferedImage' a été requise.
 
 ->problème pour le chargement des images concernant les plats de référence pour la classe CreerPlat
 Le but étant de stocker les 8 plats de références du jeu sous forme de BufferedImages, il fallait d'abord charger 
