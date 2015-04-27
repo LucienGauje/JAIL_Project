@@ -92,7 +92,7 @@ actuellement sur la file d'attente d'événements ont été traités à l'aide d
 	→ mousePress (int buttons) qui presse un ou plusieurs boutons de la souris
 	→  'waitForIdle()' qui attend que tous les événements créés ont été réalisés
 
-Comparaison d'images
+->Comparaison d'images
 Il s'agit d'une comparaison pixel à pixel de 2 images données en paramètre. 
 Pour cela, nous avons crée une fonction qui redimensionne une image trop grande ou trop petite par rapport à 
 l'autre image. 
@@ -103,12 +103,20 @@ erreur tout en comptant le nombre total de pixels des images. Ensuite, on calcul
 d'erreurs et le nombre total de pixels. C'est donc un flottant variant entre 0 et 1. Si ce rapport est supérieur 
 à 0.5 alors les 2 images ne sont pas les mêmes. Cela retourne donc faux. Sinon, le résultat est vrai.
 Cette comparaison d'images est implémenté dans la classe 'CompareImage()'
-Analyse des plats demandés et leur fabrication
-Afin de savoir quel type de plat il faut préparer, il faut d'abord faire une analyse de l'image au niveau des 
-bulles des 6 clients.
+
+->Analyse des plats demandés et leur fabrication
+Afin de savoir quel type de plat il faut préparer, il faut d'abord faire une analyse de l'image au niveau des bulles 
+des 6 clients.
 Pour se faire, on crée une HashMap de référence comportant chacun des 8 plats. 
-Ensuite, nous avons codé une fonction......
-.........
+Ensuite, nous avons codé une fonction 'Compare(BufferedImage i)' qui compare une seule BufferedImage donnée en 
+parametre avec les plats de référence stockés dans cette classe. Il retourne le plat de référence qui est similaire 
+à la BufferedImage donnée.
+Nous avons également élaboré une méthode 'PlatsDemandes()' qui emmagasine les plats retournés par la fonction 
+'Compare(BufferedImage i)' avec i étant chacun des plats voulus par les clients. Ce stockage se fait sous forme 
+d'une 'ArrayList<Integer>'. En effet, chaque entier de 1 à 8 est associé à un plat de référence. (1 pour , 2 pour, 
+3 pour, 4 pour, 5 pour, 6 pour, 7 pour, 8 pour ).
+Enfin, nous avons conçu une fonction 'getPlatsDemandes()' retournant l'ArrayList des differents plats souhaités par 
+les 6 clients.  
 
 HIERARCHIE DES CLASSES //à étoffer
 Le programme est organisée autour de 9 classes : 
