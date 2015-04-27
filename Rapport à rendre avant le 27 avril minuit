@@ -149,15 +149,23 @@ III) organisation du travail, les problemes rencontrés et leur solution
 
 - prob: comparaison d'images (peut etre??) + traitement de la BufferedImage 'CaptureEcran'  + chargement des plats de références
 
-- solutions: Pour la comparaison d'image, nous avions commencer par penser a une méthode compparanr pixel par pixel les
-deux images (celles de référence et l'image que l'ont voulais comparer), mais nous avons rapidement vue les limites d'une
-telle méthode, c'est à dire que même si un seul pixel est différent, la méthode n'aurait pas reconnue l'image.
-C'est pour cela que nous avons trouver une autre méthode qui consiste à prendre les images à comparer
-puis de couper chacune de ces images en plusieurs parties. Ainsi, nous comparons la somme de ces pixels
-dans chaqu'une des parties pour les comparer à la somme des parties de l'autre image en utilisant la somme
-des différences absolues.
-Enfin nous pouvons déterminer l'image la plus similaire a celle comparé, c'est à dire l'image qui a la somme
+- solutions: 
+
+->problème pour la comparaison d'images
+Le but étant de comparer 2 images, et de renvoyer vraie s'ils sont similaires et faux sinon.
+Au départ, nous avions commencer par penser a une méthode comparant pixel par pixel les deux images (celle de 
+référence et celle que l'on souhaité comparer). Notre code calculait le rapport entre le nombre d'erreurs (si le 
+pixel d'une image est différente de l'autre au même endroit) et le nombre de pixels de l'image comparé. Ce rapport 
+se situait entre 0 et 1. La comparaison retournait vraie si le rapport était en deçà de 0.5 voir égal à 0.5 et faux 
+s'il était au dessus.
+Cependant, nous avons rapidement vue les limites d'une telle méthode, c'est à dire que même si un seul pixel est 
+différent, la méthode n'aurait pas reconnue l'image. //FAUX avec le rapport entre 0 et 1
+C'est pour cela que nous avons trouver une autre méthode qui consiste à prendre les images à comparés puis de couper 
+chacune de ces images en plusieurs parties. Ainsi, nous comparons la somme de ces pixels dans chacune des parties pour 
+les comparer à la somme des parties de l'autre image en utilisant la somme des différences absolues.
+Finalement, nous pouvions déterminer l'image la plus similaire a celle comparée signifiant que l'image qui a la somme 
 la plus basse par bloc est la plus similaire.
+
 
 ->problème pour le traitement de la BufferedImage 'CaptureEcran'  //à compléter
 Le but étant d'analyser l'image de la classe 'CaptureEcran', il fallait découper l'image en plusieurs petites images 
