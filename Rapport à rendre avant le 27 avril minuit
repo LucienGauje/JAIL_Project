@@ -158,9 +158,12 @@ Elle sert à cliquer sur le téléphone pour commander l'ingrédient en rupture 
 
 III) organisation du travail, les problemes rencontrés et leur solution
 
-- prob: comparaison d'images (peut etre??) + traitement de la BufferedImage 'CaptureEcran'  + chargement des plats de références
+Pendant ce projet, qui nous a occupé un semestre, divers problèmes nous sont apparus. La recherche de solutions 
+a parfois était longue ou compliqué par le fait, qu'en étant en groupe, nous ne tombions pas unanimement d'accord. 
+De plus, il s'agissait également de se remettre en question sur notre manière de réfléchir et de coder.
 
-- solutions: 
+Ces différents problèmes relatif à la comparaison d'images, au traitement de la BufferedImage de la classe 
+'CaptureEcran',  ou encore au chargement d'images, vont être éclaircis ci-dessous.
 
 ->problème pour la comparaison d'images //fait
 Le but étant de comparer 2 images, et de renvoyer vraie s'ils sont similaires et faux sinon.
@@ -178,8 +181,7 @@ les comparer à la somme des parties de l'autre image en utilisant la somme des 
 Finalement, nous pouvions déterminer l'image la plus similaire a celle comparée signifiant que l'image qui a la somme 
 la plus basse par bloc est la plus similaire.
 
-
-->problème pour le traitement de la BufferedImage 'CaptureEcran'  //fait
+->problème pour le traitement de la BufferedImage de la classe 'CaptureEcran'  //fait
 Le but étant d'analyser l'image de la classe 'CaptureEcran', il fallait découper l'image en plusieurs petites images 
 qui par la suite seront utilisées à des fins différentes telles que déterminer les plats demandés des clients ou 
 cliquer sur les différents ingrédients pour fabriquer un plat souhaité.
@@ -192,7 +194,7 @@ sans de difficulté.
 Par la suite, nous avons convenu de créer divers SubImages et de stockées celles-ci dans la classe SubImage 
 préalablement conçue. L'utilisation de la méthode 'getSubimage()' de la classe 'BufferedImage' a été requise.
 
-->problème pour le chargement des images concernant les plats de référence pour la classe CreerPlat //fait
+->problème pour le chargement d'images concernant les plats de référence pour la classe CreerPlat //fait
 Le but étant de stocker les 8 plats de références du jeu sous forme de BufferedImages, il fallait d'abord charger 
 nos images de références rangés/entreposés/emmagasinés au format png dans le dossier de code. 
 Au début, nous avons codé cette partie avec la méthode 'getInstance()' de la classe Image retournant une image de 
