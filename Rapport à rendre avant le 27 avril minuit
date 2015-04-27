@@ -118,6 +118,14 @@ d'une 'ArrayList<Integer>'. En effet, chaque entier de 1 à 8 est associé à un
 Enfin, nous avons conçu une fonction 'getPlatsDemandes()' retournant l'ArrayList des differents plats souhaités par 
 les 6 clients.  
 
+->Vérification des ingrédients
+Pour ne manquer d'aucun ingrédient durant la préparation d'un plat souhaité par un client, il faut vérifier de façon 
+régulière le stock des divers ingrédients.
+Notre manière de penser est la suivante : on initialise le stockage de chaque ingrédient avec un entier dans la classe 
+'Ingredient'. Puis, lors de chaque clic de souris sur un ingrédient, on diminue le nombre stocké de cette ingrédient. 
+Enfin, lorsque ce nombre est à 4 voir en dessous de 4, on commande l'ingrédient souhaité avec la classe 'Commande' qui 
+clique sur le téléphone et clique sur l’ingrédient voulu.
+
 HIERARCHIE DES CLASSES //à étoffer
 Le programme est organisée autour de 9 classes : 
 → la classe 'jeu' qui a 3 méthodes et un constructeur
