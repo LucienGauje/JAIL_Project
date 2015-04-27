@@ -95,7 +95,17 @@ actuellement sur la file d'attente d'événements ont été traités à l'aide d
   Nous allons, à présent, détailler plusieurs algorithmes expliquant la comparaison d'images, l'analyse des plats 
 et leur fabrications ainsi que la vérification des ingrédients.
 
-->Comparaison d'images //fait
+->Comparaison d'images //à refaire
+Il s'agit d'une comparaison qui consiste à comparer la somme des pixels d'une partie de chacune des 2 images.
+En effet, on récupere les images à comparées puis on découpe chacune d'entres elles en plusieurs parties. Il nous reste
+donc à comparer ces differentes parties de chaque image obtenues en utilisant la somme des différences absolues.
+
+//Ainsi l'image qui a la somme la plus basse par bloc est la plus similaire.
+
+//Finalement, nous pouvions déterminer l'image la plus similaire a celle comparée signifiant que l'image qui a la somme 
+la plus basse par bloc est la plus similaire.
+
+/*
 Il s'agit d'une comparaison pixel à pixel de 2 images données en paramètre. 
 Pour cela, nous avons crée une fonction qui redimensionne une image trop grande ou trop petite par rapport à 
 l'autre image. 
@@ -106,6 +116,7 @@ erreur tout en comptant le nombre total de pixels des images. Ensuite, on calcul
 d'erreurs et le nombre total de pixels. C'est donc un flottant variant entre 0 et 1. Si ce rapport est supérieur 
 à 0.5 alors les 2 images ne sont pas les mêmes. Cela retourne donc faux. Sinon, le résultat est vrai.
 Cette comparaison d'images est implémenté dans la classe 'CompareImage()'
+*/
 
 ->Analyse des plats demandés et leur fabrications //fait
 Afin de savoir quel type de plat il faut préparer, il faut d'abord faire une analyse de l'image au niveau des bulles 
