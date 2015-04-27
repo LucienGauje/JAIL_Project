@@ -179,7 +179,12 @@ la plus basse par bloc est la plus similaire.
 Le but étant d'analyser l'image de la classe 'CaptureEcran', il fallait découper l'image en plusieurs petites images 
 qui par la suite seront utilisées à des fins différentes telles que déterminer les plats demandés des clients ou 
 cliquer sur les différents ingrédients pour fabriquer un plat souhaité.
-Au début, ….
+Au début, nous avions penser à faire une méthode pour chaque subImage que l'on devait créer mais après mûr réflexion,
+nous avons décider de compacter toutes ces méthodes en une seule.
+Pour cela, la nouvelle méthode crée un tableau des différentes subImages.
+Ensuite, pour faciliter la modification des subImages, nous avons créée en attribut les coordonnées de ces subImage
+sous forme de tableau d'entier. Nous pouvons ainsi modifier les coordonnées d'une des subImages ou en rajouter
+sans de difficulté.
 Par la suite, nous avons convenu de créer divers SubImages et de stockées celles-ci dans la classe SubImage 
 préalablement conçue. L'utilisation de la méthode 'getSubimage()' de la classe 'BufferedImage' a été requise.
 
