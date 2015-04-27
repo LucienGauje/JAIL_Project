@@ -139,9 +139,21 @@ Elle sert à cliquer sur le téléphone pour commander l'ingrédient en rupture 
 
 III) organisation du travail, les problemes rencontrés et leur solution
 
-prob:
+- prob: comparaison d'images (peut etre??) + chargement des plats de références
 
-solutions:
+- solutions:
+
+->problème pour le chargement des images concernant les plats de référence pour la classe CreerPlat
+Le but étant de stocker les 8 plats de références du jeu sous forme de BufferedImages, il fallait d'abord charger 
+nos images de références rangés/entreposés/emmagasinés au format png dans le dossier de code. 
+Au début, nous avons codé cette partie avec la méthode 'getInstance()' de la classe Image retournant une image de 
+type Image. Il fallait ensuite convertir cette image en BufferedImage afin de les comparer avec nos BufferedImages 
+du jeu. 
+Cependant, le compilateur a présenté une incompatibilité d'origine inconnue. Nous avons donc réétudier en amont
+cette portion de code. 
+Au terme de quelques recherches,  nous avons trouvé une méthode permettant le chargement des images souhaités. Il 
+s'agit de la méthode 'read()' de la classe 'ImageIO' qui lit une image et la retourne sous forme d'une BufferedImage.
+Nous n'avions donc plus à convertir, en BufferedImage, l'image chargée et stockée.
 
 IV) annexe : le manuel de l'utilisateur
 
