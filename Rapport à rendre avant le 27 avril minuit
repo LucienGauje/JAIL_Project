@@ -15,7 +15,7 @@ le code source (claire et commenté)
          
 Intro : (présenter le but, et parler des differentes choses, apprises durant le semestre, utilisé pour ce projet)
 
-  Nous, une équipe de 3 personnes, avons réalisé un projet commun. Ceci est une 'Intelligence Artificielle' capable 
+  Nous, une équipe de 4 personnes, avons réalisé un projet commun. Ceci est une 'Intelligence Artificielle' capable 
   de jouer à Sushi Go Round qui est un jeu à base de sprits. Les sprits sont des éléments graphiques de taille fixe, 
   positionnés à une zone donnée sur l'image du jeu. 
   Le but de ce jeu est d'identifier/analyser les commandes des clients, les fabriquer puis servir ces clients.
@@ -92,7 +92,7 @@ actuellement sur la file d'attente d'événements ont été traités à l'aide d
 	→ mousePress (int buttons) qui presse un ou plusieurs boutons de la souris
 	→  'waitForIdle()' qui attend que tous les événements créés ont été réalisés
 
-->Comparaison d'images
+->Comparaison d'images //fait
 Il s'agit d'une comparaison pixel à pixel de 2 images données en paramètre. 
 Pour cela, nous avons crée une fonction qui redimensionne une image trop grande ou trop petite par rapport à 
 l'autre image. 
@@ -104,7 +104,7 @@ d'erreurs et le nombre total de pixels. C'est donc un flottant variant entre 0 e
 à 0.5 alors les 2 images ne sont pas les mêmes. Cela retourne donc faux. Sinon, le résultat est vrai.
 Cette comparaison d'images est implémenté dans la classe 'CompareImage()'
 
-->Analyse des plats demandés et leur fabrication
+->Analyse des plats demandés et leur fabrication //fait
 Afin de savoir quel type de plat il faut préparer, il faut d'abord faire une analyse de l'image au niveau des bulles 
 des 6 clients.
 Pour se faire, on crée une HashMap de référence comportant chacun des 8 plats. 
@@ -118,7 +118,7 @@ d'une 'ArrayList<Integer>'. En effet, chaque entier de 1 à 8 est associé à un
 Enfin, nous avons conçu une fonction 'getPlatsDemandes()' retournant l'ArrayList des differents plats souhaités par 
 les 6 clients.  
 
-->Vérification des ingrédients
+->Vérification des ingrédients //fait
 Pour ne manquer d'aucun ingrédient durant la préparation d'un plat souhaité par un client, il faut vérifier de façon 
 régulière le stock des divers ingrédients.
 Notre manière de penser est la suivante : on initialise le stockage de chaque ingrédient avec un entier dans la classe 
@@ -159,15 +159,16 @@ III) organisation du travail, les problemes rencontrés et leur solution
 
 - solutions: 
 
-->problème pour la comparaison d'images
+->problème pour la comparaison d'images //fait
 Le but étant de comparer 2 images, et de renvoyer vraie s'ils sont similaires et faux sinon.
 Au départ, nous avions commencer par penser a une méthode comparant pixel par pixel les deux images (celle de 
 référence et celle que l'on souhaité comparer). Notre code calculait le rapport entre le nombre d'erreurs (si le 
 pixel d'une image est différente de l'autre au même endroit) et le nombre de pixels de l'image comparé. Ce rapport 
 se situait entre 0 et 1. La comparaison retournait vraie si le rapport était en deçà de 0.5 voir égal à 0.5 et faux 
 s'il était au dessus.
-Cependant, nous avons rapidement vue les limites d'une telle méthode, c'est à dire que même si un seul pixel est 
-différent, la méthode n'aurait pas reconnue l'image. //FAUX avec le rapport entre 0 et 1
+Cependant, nous avons rapidement vue les limites d'une telle méthode, c'est à dire que s'il y a un décalage de pixels 
+entre les 2images, la méthode aurait renvoyé faux. Ceci peut meme se produire alors que ces 2 images sont similaires.
+Il a donc fallu trouvé un autre algorithme.
 C'est pour cela que nous avons trouver une autre méthode qui consiste à prendre les images à comparés puis de couper 
 chacune de ces images en plusieurs parties. Ainsi, nous comparons la somme de ces pixels dans chacune des parties pour 
 les comparer à la somme des parties de l'autre image en utilisant la somme des différences absolues.
@@ -175,7 +176,7 @@ Finalement, nous pouvions déterminer l'image la plus similaire a celle comparé
 la plus basse par bloc est la plus similaire.
 
 
-->problème pour le traitement de la BufferedImage 'CaptureEcran'  //à compléter
+->problème pour le traitement de la BufferedImage 'CaptureEcran'  //fait
 Le but étant d'analyser l'image de la classe 'CaptureEcran', il fallait découper l'image en plusieurs petites images 
 qui par la suite seront utilisées à des fins différentes telles que déterminer les plats demandés des clients ou 
 cliquer sur les différents ingrédients pour fabriquer un plat souhaité.
@@ -188,7 +189,7 @@ sans de difficulté.
 Par la suite, nous avons convenu de créer divers SubImages et de stockées celles-ci dans la classe SubImage 
 préalablement conçue. L'utilisation de la méthode 'getSubimage()' de la classe 'BufferedImage' a été requise.
 
-->problème pour le chargement des images concernant les plats de référence pour la classe CreerPlat
+->problème pour le chargement des images concernant les plats de référence pour la classe CreerPlat //fait
 Le but étant de stocker les 8 plats de références du jeu sous forme de BufferedImages, il fallait d'abord charger 
 nos images de références rangés/entreposés/emmagasinés au format png dans le dossier de code. 
 Au début, nous avons codé cette partie avec la méthode 'getInstance()' de la classe Image retournant une image de 
